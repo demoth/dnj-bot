@@ -14,6 +14,7 @@ repositories {
 
 dependencies {
     implementation("org.telegram:telegrambots:6.3.0")
+    implementation("ch.qos.logback:logback-classic:1.4.5")
 
     testImplementation(kotlin("test"))
 }
@@ -27,5 +28,5 @@ tasks.withType<KotlinCompile> {
 }
 
 application {
-    mainClass.set("MainKt")
+    mainClass.set("org.dnj.XiaoMaoBotKt")
 }
